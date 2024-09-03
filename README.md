@@ -1,68 +1,69 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Glow Button</title>
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
-            margin: 0;
-            font-family: Arial, sans-serif;
+        .neon-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 72px;
+            fill: none;
+            stroke: #0ff;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            text-anchor: middle;
         }
-
-        .neon-button {
-            font-size: 24px;
-            padding: 15px 30px;
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: 3px;
-            background-color: transparent;
-            border: 3px solid #0ff;
-            border-radius: 10px;
-            position: relative;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
-        }
-
-        .neon-button:hover {
-            color: #0ff;
-            box-shadow: 0 0 40px #0ff, 0 0 80px #0ff, 0 0 120px #0ff;
-            border-color: #fff;
-        }
-
-        .neon-button:before,
-        .neon-button:after {
-            content: '';
-            position: absolute;
-            top: -4px;
-            left: -4px;
-            width: calc(100% + 8px);
-            height: calc(100% + 8px);
-            border: 2px solid #0ff;
-            border-radius: 10px;
+        
+        .neon-text-2 {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 1;
             opacity: 0;
-            transition: all 0.3s ease;
+        }
+        
+        @keyframes neon-flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 0.99;
+                text-shadow: 
+                    0 0 5px #0ff,
+                    0 0 10px #0ff,
+                    0 0 15px #0ff,
+                    0 0 20px #0ff,
+                    0 0 25px #0ff,
+                    0 0 30px #0ff,
+                    0 0 35px #0ff;
+            }
+            20%, 24%, 55% { 
+                opacity: 0.4; 
+                text-shadow: none;
+            }
         }
 
-        .neon-button:before {
-            transform: rotate(45deg);
+        @keyframes neon-glow {
+            0%, 100% {
+                opacity: 0.9;
+                text-shadow: 
+                    0 0 5px #0ff,
+                    0 0 10px #0ff,
+                    0 0 20px #0ff,
+                    0 0 30px #0ff,
+                    0 0 40px #0ff;
+            }
+            50% {
+                opacity: 0.8;
+                text-shadow: 
+                    0 0 3px #fff,
+                    0 0 5px #fff,
+                    0 0 10px #0ff,
+                    0 0 15px #0ff;
+            }
         }
-
-        .neon-button:hover:before,
-        .neon-button:hover:after {
-            opacity: 1;
-            box-shadow: 0 0 40px #0ff, 0 0 80px #0ff, 0 0 120px #0ff;
+        
+        .neon-text {
+            animation: neon-flicker 1.5s infinite alternate;
+        }
+        
+        .neon-text-2 {
+            animation: neon-glow 1.5s infinite alternate-reverse;
         }
     </style>
-</head>
-<body>
-    <a href="#" class="neon-button">Hi</a>
-</body>
-</html>
+    <text x="50%" y="50%" class="neon-text" dy=".35em">HI</text>
+    <text x="50%" y="50%" class="neon-text neon-text-2" dy=".35em">HI</text>
+</svg>
