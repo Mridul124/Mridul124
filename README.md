@@ -18,7 +18,7 @@
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg" alt="html5" width="40" height="40"/> </a> 
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-plain.svg" alt="html5" width="40" height="40"/> </a> </p>
 
-![last](https://gist.githubusercontent.com/Mridul124/d593dadd4319771fa72b16c1a306f5e7/raw/751e6afe478a2bb446f77b124d605c4350d51f86/last.svg)
+<a href="https://www.behance.net/mridulbisht1">![last](https://gist.githubusercontent.com/Mridul124/d593dadd4319771fa72b16c1a306f5e7/raw/751e6afe478a2bb446f77b124d605c4350d51f86/last.svg)</a>
 
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mridul124&show_icons=true&locale=en" alt="mridul124" /></p>
