@@ -20,7 +20,7 @@
 
 <a href="https://www.behance.net/mridulbisht1">![last](https://gist.githubusercontent.com/Mridul124/d593dadd4319771fa72b16c1a306f5e7/raw/751e6afe478a2bb446f77b124d605c4350d51f86/last.svg)</a>
 
-
+![count](https://komarev.com/ghpvc/?username=your-github-mridul124&style=flat-square)
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mridul124&show_icons=true&locale=en" alt="mridul124" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mridul124&" alt="mridul124" /></p>
